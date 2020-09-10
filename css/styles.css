@@ -12,6 +12,10 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+  --primary-bg-color: #e5e5e5;
+  --secondary-bg-color: #f5f4fa;
 }
 
 .list {
@@ -19,7 +23,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 }
 
@@ -34,7 +38,7 @@ body {
 }
 
 .logo-second {
-  color: #000000;
+  color: var(--primary-black-color);
 }
 
 .site-nav .link {
@@ -63,5 +67,37 @@ body {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--primary-white-color);
+}
+
+.button {
+  background-color: var(--secondary-bg-color);
+  color: var(--title-text-color);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/*TEAM*/
+.team-container {
+  background-color: var(--secondary-bg-color);
+}
+
+/*PORTFOLIO*/
+
+.projects .button {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.projects-title {
+  color: var(--title-text-color);
 }
